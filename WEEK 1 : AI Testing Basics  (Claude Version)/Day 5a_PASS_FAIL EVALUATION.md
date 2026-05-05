@@ -20,22 +20,37 @@ In previous steps, we generated AI responses. In this step, we add a **basic eva
 
 ## Script
 
-**File:** `day5.py`
+**File:** `Day_5_PassFailEvalv.py`
 
 ```python
 # Simple rule-based evaluation (QA logic)
 
 def evaluate(answer):
-
-    # If response is too short → likely low quality
+    # Rule: response too short → low quality
     if len(answer) < 30:
-        return "FAIL"
+        return {
+            "status": "FAIL",
+            "reason": "Response too short"
+        }
 
-    return "PASS"
+    return {
+        "status": "PASS",
+        "reason": None
+    }
 
 
-# Example input
+# Example
 sample = "API testing ensures APIs work correctly."
 
-print(evaluate(sample))
+result = evaluate(sample)
+
+print("Answer:", sample)
+print("Evaluation:", result)
+```
+
+
+## Output for above sample
+```
+Answer: API testing ensures APIs work correctly.
+Evaluation: {'status': 'PASS', 'reason': None}
 ```
