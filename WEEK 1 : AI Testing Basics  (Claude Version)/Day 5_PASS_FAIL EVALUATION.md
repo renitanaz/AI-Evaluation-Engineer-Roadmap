@@ -1,4 +1,4 @@
-# Day 5 — Simple Rule-Based Evaluation (QA Logic)
+# [ Day 5 ] Simple Rule-Based Evaluation (QA Logic)
 
 ## Goal
 Introduce a basic evaluation layer that classifies AI-generated responses as **PASS** or **FAIL** using simple rules.
