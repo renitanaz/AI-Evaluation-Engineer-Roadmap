@@ -38,3 +38,6 @@ response = client.messages.create(
 # Print response
 print(response.content[0].text)
 ```
+
+## What to observe
+We should see a response to  "What is software testing?" printed. 
