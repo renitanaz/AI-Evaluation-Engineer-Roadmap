@@ -53,7 +53,7 @@ Hence, if models that are not available to API are used, the 404 will be encount
 
 **Solution**: Ask the API itself for a list of models aviable for API
 
-```
+```python
 from anthropic import Anthropic
 import os
 from dotenv import load_dotenv
