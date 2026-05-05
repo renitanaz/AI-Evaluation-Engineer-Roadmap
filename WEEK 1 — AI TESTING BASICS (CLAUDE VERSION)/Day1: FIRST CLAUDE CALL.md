@@ -41,3 +41,38 @@ print(response.content[0].text)
 
 ## What to observe
 We should see a response to  "What is software testing?" printed. 
+
+
+## Troubleshoot 1: 404 model not found
+
+Anthropic updates model IDs frequently, and there are two important realities:
+    - Some models are only available in the web app
+    - Some models are available in the API
+
+Hence, if models that are not available to API are used, the 404 will be encountered. 
+
+**Solution**: Ask the API itself for a list of models aviable for API
+
+```
+from anthropic import Anthropic
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+
+models = client.models.list()
+
+for model in models.data:
+    print(model.id)
+```
+
+**Response**: Print of all the models. Replace one of the models in the 'model' variable in our day1.py
+
+```
+claude-3-5-sonnet-20241022
+claude-3-haiku-20240307
+claude-3-opus-20240229
+```
+
