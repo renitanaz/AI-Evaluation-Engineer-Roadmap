@@ -1,4 +1,4 @@
-# Day 1 — FIRST CLAUDE CALL
+# [Day 1] FIRST CLAUDE CALL
 
 ## Goal
 We first understand how to talk to Claude programmatically
