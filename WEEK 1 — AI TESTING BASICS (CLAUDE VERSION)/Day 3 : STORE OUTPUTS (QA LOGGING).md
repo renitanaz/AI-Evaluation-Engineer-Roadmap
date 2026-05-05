@@ -25,7 +25,7 @@ In AI systems:
   
 ## Script
 STORE OUTPUTS (QA LOGGING) - Day_3_Storeoutput_QALogging.py
-``` 
+```python
 import json
 from anthropic import Anthropic
 import os
