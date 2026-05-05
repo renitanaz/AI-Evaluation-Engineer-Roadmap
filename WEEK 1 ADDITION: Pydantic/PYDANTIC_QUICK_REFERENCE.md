@@ -130,21 +130,21 @@ class TestResult(BaseModel):
 # Validation succeeds
 try:
     result = TestResult(test_id=1, status="PASS")
-    print("✅ Valid:", result.model_dump())
+    print(" Valid:", result.model_dump())
 except ValidationError as e:
-    print("❌ Error:", e)
+    print(" Error:", e)
 
 # Validation fails (missing field)
 try:
     result = TestResult(test_id=1)  # Missing 'status'
 except ValidationError as e:
-    print("❌ Missing field:", e)
+    print(" Missing field:", e)
 
 # Validation fails (wrong type)
 try:
     result = TestResult(test_id="not_int", status="PASS")  # ID should be int
 except ValidationError as e:
-    print("❌ Wrong type:", e)
+    print(" Wrong type:", e)
     # Pydantic will try to convert (str "1" → int 1)
     # But will fail if conversion impossible
 ```
@@ -275,13 +275,4 @@ class RAGTest(BaseModel):
 | **ValidationError** | Catch validation issues |
 | **Field validators** | Custom validation logic |
 
----
 
-## Interview Talking Points
-
-✅ "We use Pydantic to enforce output schemas"
-✅ "Every LLM response is validated before logging"
-✅ "This catches data quality issues early"
-✅ "Computed fields reduce boilerplate code"
-✅ "We can version our schemas in git"
-✅ "Validation errors are caught and logged"
