@@ -1,4 +1,13 @@
-# Setup Guide (Claude API)
+# WHAT WE WILL BUILD (CLAUDE VERSION)
+✔ Claude API integration
+✔ AI test execution system
+✔ Test suite (prompts)
+✔ Output logging
+✔ Basic evaluation logic
+
+
+
+# INSTALLATION :Setup Guide (Claude API)
 
 ## 1. Install Python
 
