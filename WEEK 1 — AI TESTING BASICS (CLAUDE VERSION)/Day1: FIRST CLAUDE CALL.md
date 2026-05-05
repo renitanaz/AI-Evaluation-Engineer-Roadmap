@@ -7,7 +7,7 @@ We first understand how to talk to Claude programmatically
 We are sending a question to Claude model and print the response.
 
 ## First Claude API Call - day1.py
-```
+```python
 # Import Claude SDK
 from anthropic import Anthropic
 import os
