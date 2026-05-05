@@ -12,7 +12,7 @@ We would ask teh same question multiple times and observe that response changes 
 
 
 ## TEST AI VARIABILITY -Day_2_AIVariability.py
-```
+```python
 from anthropic import Anthropic
 import os
 from dotenv import load_dotenv
