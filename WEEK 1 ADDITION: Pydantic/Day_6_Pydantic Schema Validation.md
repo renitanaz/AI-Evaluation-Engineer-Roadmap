@@ -155,7 +155,7 @@ for i in range(5):
     
     answer = response.content[0].text
     
-    # ✨ NEW: Validate with Pydantic before saving
+    # NEW: Validate with Pydantic before saving
     test_result = AITestResponse(
         test_id=i + 1,
         prompt=prompt,
