@@ -5,6 +5,10 @@
 ✔ Output logging
 ✔ Basic evaluation logic
 
+# Why API integration
+-  Real AI systems are API-based : They do not use webiste or chat screens. They use API calls from backend code.
+  Sample flow: User → Your App → Claude API → Response → User
+-  The evaluation system needs automation which we cannot realistically do manually in chat UI. We will be building datasets, test suites, evaluation pipelines, AI agents which requires sending hundreds of prompts automatically, storing results and scoring outputs.
 
 
 # INSTALLATION :Setup Guide (Claude API)
