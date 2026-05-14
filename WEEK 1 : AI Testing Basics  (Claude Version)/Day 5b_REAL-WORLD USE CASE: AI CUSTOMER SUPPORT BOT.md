@@ -56,7 +56,8 @@ def evaluate_ai_response(response):
 
 
 ## Evolution of these quality checks at advanced levels:
-- Level 1	    |          Rule-based pass/fail (WE ARE HERE)
-- Level 2	    |          LLM-as-a-judge scoring. i.e. AI evaluates AI responses
-- Level 3	    |          Multi-metric evaluation (quality, safety, relevance)
+Each level increases intelligence, automation, reliability and production readiness. 
+- Level 1	    |          Rule-based pass/fail i.e Use hardcoded rules (***** WE ARE HERE *******)
+- Level 2	    |          LLM-as-a-judge scoring. i.e.  Use another AI model to evaluate responses.
+- Level 3	    |          Multi-metric evaluation (quality, safety, relevance) i.e. We evaluate with multiple dimensions.
 - Level 4	    |          Autonomous evaluation agents. i.e. If FAIL, Then AI regenerates better answer
