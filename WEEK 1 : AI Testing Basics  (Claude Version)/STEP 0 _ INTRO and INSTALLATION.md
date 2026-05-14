@@ -1,9 +1,9 @@
 # WHAT WE WILL BUILD (CLAUDE VERSION)
-✔ Claude API integration
-✔ AI test execution system
-✔ Test suite (prompts)
-✔ Output logging
-✔ Basic evaluation logic
+- > Claude API integration
+- > AI test execution system
+- > Test suite (prompts)
+- > Output logging
+- > Basic evaluation logic
 
 # Why API integration
 -  Real AI systems are API-based : They do not use webiste or chat screens. They use API calls from backend code.
